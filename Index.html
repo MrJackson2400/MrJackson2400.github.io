@@ -25,10 +25,10 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image:url('https://i.pinimg.com/originals/5e/93/44/5e93446c8e04d4eebb641b953266846c.jpg');
-  min-height: 50%;
+  min-height:60%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Portfolio)test */
 .bgimg-2 {
   background-image: url("https://media.istockphoto.com/vectors/tree-bush-pixel-style-vector-illustration-landscape-vector-id1213453118?k=20&m=1213453118&s=612x612&w=0&h=xJAzvfoc048rHTzZMznWperEoi--SPu1dlGMzqFuiy8=");
   min-height: 200px;
@@ -50,6 +50,19 @@ body, html {
     min-height: 400px;
   }
 }
+
+.cb-animation {
+  animation-name: box-animation;
+  width: 100%;
+  background-color: red;
+  animation-duration: 4s;
+}
+
+@keyframes box-animation {
+  from {background-color: red;}
+    to {background-color: yellow;}
+}
+
 </style>
 <body>
 
@@ -80,19 +93,22 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+    <div>
+  <img src="/Users/jackson/Desktop/Projects/Website Assets/jordanjacksonhat.png" alt="Bluehat J in the middle">
+    </div>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Lets Meet Mr.Jackson</h3>
+  <h3 class="w3-center cb-animation">Lets Meet Mr.Jackson</h3>
   <p class="w3-center"><em>Jordan Jackson, that is =D</em></p>
   <p> First and foremost, welcome to my website!! Since you're here, I'm assuming theres some sort of interst so lets jump into the fun stuff. Born and raised in the Big Apple
     but currently living in the Big Peach - thats Georgia btw. I was first bit by the tech bug back in 2017 when I started working at Fullstack Academy. I watched how tech
     changed the lives of so many people and I patiently waited for the perfect opportunity
     to break into the industry myself. As you can see from this website, the stars have aligned and I am moving full steam ahead to claim a spot in the great world of tech.
 </p>
+
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Jordan Jackson</b></p><br>
@@ -119,7 +135,6 @@ body, html {
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
 </div>
-
 
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -241,16 +256,15 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}
+}8777
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
-function myFunction() {
+function myFunction() {WDCDC
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    } else { navbar.classNamNJWCNDJKCNDJCNKWDCN
     }
 }
 
