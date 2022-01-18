@@ -25,22 +25,15 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image:url('https://i.pinimg.com/originals/5e/93/44/5e93446c8e04d4eebb641b953266846c.jpg');
-  min-height:60%;
+  min-height:50%;
 }
 
 /* Second image (Portfolio)test */
-.bgimg- {
+.bgimg-3 {
   background-image: url("https://media.istockphoto.com/vectors/tree-bush-pixel-style-vector-illustration-landscape-vector-id1213453118?k=20&m=1213453118&s=612x612&w=0&h=xJAzvfoc048rHTzZMznWperEoi--SPu1dlGMzqFuiy8=");
   min-height: 200px;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("https://c0.wallpaperflare.com/preview/136/377/167/t5f21c43qmk7sn7gl8ac79go1l.jpg");
-  min-height: 175px;
-}
-
-.w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -54,14 +47,15 @@ body, html {
 .cb-animation {
   animation-name: box-animation;
   width: 100%;
-  background-color: red;
+  background-color:CornflowerBlue;
   animation-duration: 4s;
 }
 
 @keyframes box-animation {
-  from {background-color: red;}
-    to {background-color: yellow;}
+  from {background-color: CornflowerBlue;}
+    to {background-color: mintcream;}
 }
+
 
 </style>
 <body>
@@ -72,10 +66,9 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Who's Jordan?</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> What Has He Done?</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> How Can I Contact Him?</a>
+    <a href="#home" class="w3-bar-item w3-button w3-blue-grey">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-blue-grey"><i class="fa fa-user"></i> Who's Jordan?</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-blue-grey"><i class="fa fa-envelope"></i> How Can I Contact Him?</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -156,27 +149,20 @@ body, html {
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-email-icon-isolated-on-background-png-image_5207360.jpg" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Atlanta, GA<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: J.jackson2400@gmail.com<br>
       </div>
-      <p> Feedback? Questions? Concerns? Leave It All Below =D </p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> Send
-        </button>
+    
       </form>
     </div>
   </div>
@@ -186,12 +172,9 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Start Over</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"> https://twitter.com/MrJackson2400</i>
-    <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/mrjackson2400/</i>
+    <a href="https://twitter.com/MrJackson2400" target="_blank" > <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/mrjackson2400/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
